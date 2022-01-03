@@ -127,9 +127,12 @@ GRANT SELECT, UPDATE(secretstr) ON s1.t1 TO u2;
 
 13. Role `u3` can only view the data in `s2` via a function call that you will need to create. Direct access to the table in `s2` is not permitted. Role `u3` cannot access `s1`
 ```sql
-CREATE OR REPLACE FUNCTION s2.u3Access(target_content text) 
+CREATE OR REPLACE FUNCTION u3Access() 
     
-    RETURNS TABLE (name text, secretstr text)
+    RETURNS TABLE (
+        name text,
+        secstring text
+    )
     LANGUAGE plpgsql
 
     AS $$
@@ -137,9 +140,11 @@ CREATE OR REPLACE FUNCTION s2.u3Access(target_content text)
     BEGIN
         RETURN QUERY
             SELECT 
-                target_content 
+                'name',
+                secretstr
             FROM
-                t1;
+                s2.t1;
     END; $$;
 ```
-SOMETHING IS GOING WRING ^^^
+Use the `SET SEARCH_PATH=s2` command and `SHOW SEARCH_PATH`
+
