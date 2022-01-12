@@ -34,3 +34,8 @@ These tags create an interactive terminal instance that you can use
 docker inspect PACKAGENAME:TAG
 ```
 Gives lots of useful information about the package
+
+### Removing docker images
+```
+docker rmi IMAGEID
+```
