@@ -57,7 +57,7 @@ docker run --detach --rm -p 7777:6666 --name chat_c local/chat_i
 - Play with docker logs
 - Play with docker mounting to a volume
 
-## Chat sErver 0.3
+## Chat Server 0.3
 ```bash
 #  docker build --tag local/chat_i  --tag local/chat_i:0.3 .
 #  docker run --name chat_c -d -p 127.0.0.1:7777:4567 local/chat_i:0.3 4567
@@ -83,8 +83,8 @@ ENTRYPOINT [  "/usr/bin/ncat", \
               "--keep-open",   \
               "--listen",      \
               "-4",            \
-              "--chat"  ]
+              "--chat" ]
 
 # (default) parameter to concatenate onto the command in ENTRYPOINT
-CMD [ "6666"  ]
+CMD [ "6666" ]
 ```
