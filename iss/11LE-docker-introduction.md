@@ -39,3 +39,8 @@ Gives lots of useful information about the package
 ```
 docker rmi IMAGEID
 ```
+
+### Looking at runningn containers
+```
+docker ps
+```
