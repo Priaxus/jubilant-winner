@@ -97,3 +97,34 @@
 - Gives a better understanding of code internals
 - Stronger cohesion between code and use cases
 
+## Test Driven Devlopment (TDD)
+Method of developing code that involves creating the test before writing module.
+- Tests scripts are designed according to the "Triple A" pattern
+    - Arrange the code to setup the test
+    - Act - invoke the test
+    - Assert - check whether the expectations are met.
+- Create the test first and then begin the cycle of introducing code into the code base and refining the code and the test until the code section is complete.
+- Goal is that all lines of code are covered by a test - arguable whether this is achievable or even desirable
+
+### Advantages
+- A large suite of test programs is developed over time
+- Allows issues to be detected early in the development lifecycle
+- Developers forced to think in advance about what code is written
+
+### Disadvantages
+- Effort in creating unit tests has been the subject of debate
+- Desire to provide test coverage for all code is unrealistic
+
+### How to do it
+1. Declare the test
+2. Write the minimal amount of code to make the test pass
+3. Refactor
+
+#### Example
+![](https://i.imgur.com/PucSmHx.png)
+
+### Starting with (Failing) End to End Tests
+This testing may significantly reduce the number of unit tests that need to be created
+
+#### Example
+![](https://i.imgur.com/Jy6rUge.png)
