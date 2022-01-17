@@ -128,3 +128,7 @@ This testing may significantly reduce the number of unit tests that need to be c
 
 #### Example
 ![](https://i.imgur.com/Jy6rUge.png)
+
+# By friday
+
+DETERMINE PLANS WITH TESTING/IMPLEMENTAION - What is happening? Who's doing what?
