@@ -132,3 +132,16 @@ This testing may significantly reduce the number of unit tests that need to be c
 # By friday
 
 DETERMINE PLANS WITH TESTING/IMPLEMENTAION - What is happening? Who's doing what?
+
+# On Monday
+
+No CCSE Lecture
+Team Meetings (MON/TUE) --- ONLINE
+
+IM will be impacted too.
+
+# By monday
+
+Have plans in place covering what we, as a team, are doing and what individuals are doing.
+**These will be discussed with Tony.**
+Can also cover what is easier/what is harder.
