@@ -245,6 +245,7 @@ LIMIT
 SELECT 
     cust.customer_name, 
     SUM(ordr.quantity * pcat.cost)::NUMERIC(10,2) AS "Total Spent"
+    CONCAT(emp.forename, ' ', emp.surname) AS "Employee Name"
 FROM
     customer cust
     
@@ -293,5 +294,21 @@ FROM
             cord.order_date >= MAX(cord.order_date) - INTERVAL '6 months'
             
     ) x    
+;
+```
+
+```sql
+SELECT 
+    CONCAT(emp.forename, ' ', emp.surname) AS "Employee Name",
+    pens.amount
+FROM
+    hr_emp_details emp
+    
+    INNER JOIN 
+        hr_pension pens
+            ON emp.emp_corp_id = pens.emp_corp_id
+
+GROUP BY
+    emp.emp_corp_id
 ;
 ```
